@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4d03f"
+    tools:context="com.example.admin.cafe20.Menu">
+
+    <TextView
+        android:id="@+id/burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:text="Burgers :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chickenburger"
+        android:layout_alignStart="@+id/chickenburger"
+        android:layout_below="@+id/chickenburger"
+        android:text="Pizza :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/sides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chickenbarbeque"
+        android:layout_alignStart="@+id/chickenbarbeque"
+        android:layout_below="@+id/cheese"
+        android:text="Sides :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/desserts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sides"
+        android:layout_alignStart="@+id/sides"
+        android:layout_below="@+id/sides"
+        android:layout_marginTop="92dp"
+        android:text="Deserts :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <CheckBox
+        android:id="@+id/veggieburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/burger"
+        android:layout_alignStart="@+id/burger"
+        android:layout_below="@+id/burger"
+        android:text="Veggie Burger" />
+
+    <CheckBox
+        android:id="@+id/paneerburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chickenburger"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_toEndOf="@+id/chickenburger"
+        android:layout_toRightOf="@+id/chickenburger"
+        android:text="Paneer Burger" />
+
+    <CheckBox
+        android:id="@+id/chickenburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/veggieburger"
+        android:layout_alignStart="@+id/veggieburger"
+        android:layout_below="@+id/veggieburger"
+        android:text="Chicken Burger" />
+
+    <CheckBox
+        android:id="@+id/muttonburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paneerburger"
+        android:layout_alignStart="@+id/paneerburger"
+        android:layout_below="@+id/paneerburger"
+        android:text="Mutton Burger" />
+
+    <CheckBox
+        android:id="@+id/margherita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pizza"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_below="@+id/pizza"
+        android:text="Margherita" />
+
+    <CheckBox
+        android:id="@+id/paneeroverloaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/muttonburger"
+        android:layout_alignStart="@+id/muttonburger"
+        android:layout_below="@+id/pizza"
+        android:text="Paneer Overloaded" />
+
+    <CheckBox
+        android:id="@+id/chickenbarbeque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/margherita"
+        android:layout_alignStart="@+id/margherita"
+        android:layout_below="@+id/margherita"
+        android:text="Chicken Barbeque" />
+
+    <CheckBox
+        android:id="@+id/chickensalami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paneeroverloaded"
+        android:layout_alignStart="@+id/paneeroverloaded"
+        android:layout_below="@+id/paneeroverloaded"
+        android:text="Chicken Salami" />
+
+
+    <RadioButton
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/no"
+        android:layout_alignBottom="@+id/no"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/chickenbarbeque"
+        android:layout_toRightOf="@+id/chickenbarbeque"
+        android:duplicateParentState="false"
+        android:text="Yes" />
+
+    <RadioButton
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chickensalami"
+        android:layout_alignStart="@+id/chickensalami"
+        android:layout_below="@+id/chickensalami"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:text="No"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yes"
+        android:layout_alignBottom="@+id/yes"
+        android:layout_alignEnd="@+id/chickenbarbeque"
+        android:layout_alignRight="@+id/chickenbarbeque"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Extra Cheese :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <CheckBox
+        android:id="@+id/bread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sides"
+        android:layout_alignStart="@+id/sides"
+        android:layout_below="@+id/sides"
+        android:text="Garlic Bread" />
+
+    <CheckBox
+        android:id="@+id/cheesebread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bread"
+        android:layout_alignBottom="@+id/bread"
+        android:layout_alignLeft="@+id/chickensalami"
+        android:layout_alignStart="@+id/chickensalami"
+        android:text="Cheese Garlic Bread" />
+
+    <CheckBox
+        android:id="@+id/nachos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bread"
+        android:layout_alignStart="@+id/bread"
+        android:layout_below="@+id/bread"
+        android:text="Nachos" />
+
+    <CheckBox
+        android:id="@+id/dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cheesebread"
+        android:layout_alignStart="@+id/cheesebread"
+        android:layout_below="@+id/cheesebread"
+        android:text="Cheesy Dip" />
+
+    <CheckBox
+        android:id="@+id/coke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desserts"
+        android:layout_alignStart="@+id/desserts"
+        android:layout_below="@+id/nachos"
+        android:text="Coke" />
+
+    <CheckBox
+        android:id="@+id/sprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dip"
+        android:layout_alignStart="@+id/dip"
+        android:layout_below="@+id/dip"
+        android:text="Sprite" />
+
+    <CheckBox
+        android:id="@+id/cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desserts"
+        android:layout_alignStart="@+id/desserts"
+        android:layout_below="@+id/desserts"
+        android:text="Cheese Cake" />
+
+    <CheckBox
+        android:id="@+id/brownie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cake"
+        android:layout_alignLeft="@+id/sprite"
+        android:layout_alignStart="@+id/sprite"
+        android:text="Brownie" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:background="#dcdcdc"
+        android:text="Order" />
+
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4d03f"
+    tools:context="com.example.admin.cafe20.Bill">
+
+    <TextView
+        android:id="@+id/billname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:text="Name :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/billemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billname"
+        android:layout_alignStart="@+id/billname"
+        android:layout_below="@+id/billname"
+        android:layout_marginTop="17dp"
+        android:text="Email :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/billphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billemail"
+        android:layout_alignStart="@+id/billemail"
+        android:layout_below="@+id/billemail"
+        android:layout_marginTop="15dp"
+        android:text="Phone :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/billorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billphone"
+        android:layout_alignStart="@+id/billphone"
+        android:layout_below="@+id/billphone"
+        android:layout_marginTop="19dp"
+        android:text="Your Order :"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <TextView
+        android:id="@+id/bill_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/billname"
+        android:layout_toEndOf="@+id/billorder"
+        android:layout_toRightOf="@+id/billorder"
+        android:text="name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/bill_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/billemail"
+        android:layout_alignLeft="@+id/bill_name"
+        android:layout_alignStart="@+id/bill_name"
+        android:text="email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/bill_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/billorder"
+        android:layout_toEndOf="@+id/billorder"
+        android:layout_toRightOf="@+id/billorder"
+        android:text="phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/bill_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billorder"
+        android:layout_alignStart="@+id/billorder"
+        android:layout_below="@+id/billorder"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="orders"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/total_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bill_order"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bill_order"
+        android:layout_marginBottom="95dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Finish"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button" />
+
+    <TextView
+        android:id="@+id/ratecard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bill_order"
+        android:layout_alignBottom="@+id/bill_order"
+        android:layout_toEndOf="@+id/bill_order"
+        android:layout_toRightOf="@+id/bill_order"
+        android:text="pay"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+</RelativeLayout>
